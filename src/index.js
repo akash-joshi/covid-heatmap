@@ -13,7 +13,7 @@ export default function App() {
 
   const [circles, setCircles] = useState(initialPolygons);
 
-  const [zoom, setZoom] = useState(16);
+  const [zoom, setZoom] = useState(17);
 
   // [18.52043, 73.856743]
   const state = {
@@ -39,7 +39,7 @@ export default function App() {
       });
       setCircles(nextCircles);
     });
-  }, [zoom, state]);
+  }, [zoom]);
 
   return (
     <div>
