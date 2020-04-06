@@ -17,7 +17,7 @@ export default function App() {
 
   // [18.52043, 73.856743]
   const state = {
-    center: lat && long ? [lat, long] : [17.426352, 78.43494],
+    center: lat && long ? [parseFloat(lat), parseFloat(long)] : [17.426352, 78.43494],
     zoom: 17
   };
 
