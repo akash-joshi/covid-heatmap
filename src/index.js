@@ -39,7 +39,7 @@ export default function App() {
       });
       setCircles(nextCircles);
     });
-  }, [zoom]);
+  }, [zoom, state]);
 
   return (
     <div>
